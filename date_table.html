@@ -1,0 +1,49 @@
+<script type = "text/javascript">
+
+var j = new Date(2020,1,0);
+var j_cnt =j.getDate();
+var f = new Date(2020,2,0);
+var f_cnt = f.getDate();
+
+var tmp = new Date(2020,1,30);
+console.log(tmp.getMonth());
+
+
+var arr = new Array('일','월','화','수','목','금','토');
+
+document.write("<table border = '1'>");
+    document.write("<tr>");
+    document.write("<th>2020/1月");
+    document.write("</th>");
+    document.write("<th>2020/2月");
+    document.write("</th>");
+    document.write("</tr>");
+        
+        for(i=1;i<=31;i++){
+                document.write("<tr>");
+                if(i<=j_cnt){
+                    var day = new Date(2020,1,i);
+                document.write("<td>"+day.getFullYear()+"/"+day.getMonth()+"/"+(i)+"("+arr[day.getDay()]+")"+"</td>");
+                }
+                if(i<=f_cnt){
+                    var day1 = new Date(2020,2,i);
+                document.write("<td>"+day1.getFullYear()+"/"+day1.getMonth()+"/"+(i)+"("+arr[day1.getDay()]+")"+"</td>");
+                }
+                document.write("<tr>");
+            
+        }
+    
+
+document.write("</table>");
+
+
+
+</script>
+
+<tr>
+
+    <th>gksk</th>
+    <th>enf</th>
+
+</tr>
+<tr><td></td></tr>
