@@ -22,17 +22,19 @@ document.write("<table border = '1'>");
         for(i=1;i<=31;i++){
                 document.write("<tr>");
                 if(i<=j_cnt){
-                    var day = new Date(2020,1,i);
-                document.write("<td>"+day.getFullYear()+"/"+day.getMonth()+"/"+(i)+"("+arr[day.getDay()]+")"+"</td>");
+                    var day = new Date('2020/1/'+"'"+i+"'");
+                document.write("<td>"+day.getFullYear()+"/"+(day.getMonth()+1)+"/"+(i)+"("+arr[day.getDay()]+")"+"</td>");
                 }
                 if(i<=f_cnt){
-                    var day1 = new Date(2020,2,i);
-                document.write("<td>"+day1.getFullYear()+"/"+day1.getMonth()+"/"+(i)+"("+arr[day1.getDay()]+")"+"</td>");
+                    var day1 = new Date('2020/2/'+"'"+i+"'");
+                document.write("<td>"+day1.getFullYear()+"/"+(day1.getMonth()+1)+"/"+(i)+"("+arr[day1.getDay()]+")"+"</td>");
                 }
                 document.write("<tr>");
             
         }
     
+
+        
 
 document.write("</table>");
 
